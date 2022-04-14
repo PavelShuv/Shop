@@ -1,0 +1,30 @@
+html
+	body
+		// head start
+		include default/head.pug 
+		// head end
+ 
+		// header start
+		include default/header.pug
+		// header end
+		.delivery-page
+			.stub
+			.main-grid
+				h1  Доставка и оплата
+				// delivery-list start
+			.main-grid
+				include delivery-page/delivery-steps.pug
+				// delivery-list end  
+
+				// delivery-results start
+				include delivery-page/delivery-total.pug
+			// delivery-results end  
+
+		// footer stub
+		.footer-stub.green
+			.ragged-stub.black
+		// footer stub
+		
+		// footer start
+		include default/footer.pug
+		// footer end  

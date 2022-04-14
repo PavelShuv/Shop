@@ -1,0 +1,162 @@
+/*default*/
+.main-grid {
+  padding: 0px 30px;
+}
+
+input.btn.large,
+.btn.large {
+  width: 168px;
+}
+
+/*default*/
+
+/*section-1*/
+.product-slider-container {
+  .product-slider-info {
+    padding: 25px 25px 19px;
+  }
+
+  .product-info-body {
+    width: calc(100% + 40px);
+  }
+}
+
+/*section-1*/
+/*section-2*/
+.offer-item .offer-img {
+  width: 200px;
+  height: 200px;
+}
+
+/*section-2*/
+/*section-3*/
+.promotion-slider .owl-dots {
+  top: 160px;
+  left: 25px;
+}
+
+/*section-3*/
+
+
+.card-info-body .characteristics-right {
+  grid-column: 5 / span 3;
+}
+
+.card-main {
+  padding-bottom: 170px;
+}
+
+.section-recommendations {
+  padding-bottom: 190px;
+}
+
+
+/*-----defaul-----*/
+
+
+/*-----defaul-----*/
+
+
+/*-----btns-----*/
+
+/*-----btns-----*/
+
+/*-----forms-----*/
+
+/*-----forms-----*/
+
+/*-----popup-form-----*/
+
+
+/*-----popup-form-----*/
+
+/*-----header-----*/
+
+
+/*-----header-----*/
+
+/*-----footer-----*/
+
+
+/*-----footer-----*/
+
+/*-----mobile-menu-----*/
+
+
+/*-----mobile-menu-----*/
+
+/*-----slider-owl-----*/
+
+
+/*-----slider-owl-----*/
+
+
+/*-----map-----*/
+
+/*-----map-----*/
+
+/*--------------------main-page-start----*/
+
+/*--section-1--*/
+/*--section-1--*/
+
+/*--section-2--*/
+/*--section-2--*/
+
+/*--section-3--*/
+/*--section-3--*/
+
+/*--section-4--*/
+/*--section-4--*/
+
+/*--section-5--*/
+/*--section-5--*/
+
+/*--------------------main-page-end----*/
+/*--------------------card-page-start----*/
+
+/*--main-start--*/
+/*--main-end--*/
+
+/*--recommendations-start--*/
+/*--recommendations-end--*/
+
+/*--promotion-start--*/
+/*--promotion-end--*/
+
+/*--reviews-start--*/
+/*--reviews-end--*/
+
+/*--------------------card-page-end----*/
+
+.basket-results-hint {
+  display: block;
+  justify-content: space-between;
+}
+
+.basket-results-hint .hint-cell {
+  width: 100%;
+  text-align: center;
+  padding: 0 0 15px;
+}
+
+.basket-list-item h3 {
+  font-size: 21px;
+}
+
+.delete-basket-list {
+  margin-top: 15px;
+}
+
+.delivery-steps {
+  grid-column: span 10 / auto;
+}
+
+
+.delivery-steps-item-last .delivery-steps-end {
+  grid-column: 5 / span 7;
+}
+
+.basket-results-container .basket-line {
+  font-size: 16px;
+}

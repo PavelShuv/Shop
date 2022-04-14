@@ -1,0 +1,68 @@
+.section-3 {
+  padding: 45px 0 237px;
+}
+
+.promotion-section.white {
+  h2 {
+    color: $greenColor;
+  }
+
+  .owl-dot {
+    &::after {
+      border-color: $greenColor;
+    }
+
+    &:hover,
+    &.active {
+
+      &:after {
+        background-color: $greenColor;
+      }
+    }
+  }
+}
+
+.promotion-slider {
+  font-size: $standartSizePlus;
+
+
+
+  h2 {
+    text-transform: uppercase;
+    margin: 0 0 181px;
+  }
+
+  .owl-dots {
+    text-align: left;
+    bottom: auto;
+    top: 253px;
+    left: 40px;
+    width: auto;
+  }
+
+
+
+
+}
+
+.promotion-text {
+  margin: 0 0 60px;
+}
+
+.promotion-info {
+  grid-column: span 6;
+
+}
+
+.promotion-text {
+  line-height: 1.15;
+  max-width: 510px;
+}
+
+.promotion-img {
+  grid-column: 8/span 7;
+
+  img {
+    width: 86%;
+  }
+}

@@ -1,0 +1,216 @@
+* {
+	box-sizing: border-box;
+}
+
+
+
+body,
+html {
+	font-family: "regular";
+	color: $grayColor;
+	font-size: $standartSize;
+	min-width: 320px;
+	min-height: 640px;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+
+}
+
+
+.wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+a {
+	color: inherit;
+	display: inline-block;
+
+	&:hover {}
+}
+
+.ln,
+.ln li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.custom-disk {
+	li {
+		padding-left: 15px;
+		position: relative;
+
+		&:before {
+			content: "";
+			@include positionElement(4px, 4px, 0, 8px);
+			background: $blackColor;
+			border-radius: 100%;
+		}
+	}
+}
+
+.flex-align {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-cover {
+	position: relative;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	img {
+		visibility: hidden;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	font-family: "semibold";
+	margin: 0;
+	padding: 0;
+	line-height: 1.1;
+	color: $blackColor;
+}
+
+b,
+strong {
+	font-weight: normal;
+	font-family: "semibold";
+}
+
+h1 {
+	@include changeFontSize($medialargeSizePlus);
+}
+
+h2 {}
+
+$gridCount: 16;
+
+.main-grid {
+	display: grid;
+	grid-template-columns: repeat($gridCount, 1fr);
+	grid-column-gap: 20px;
+	padding: 0 50px;
+}
+
+.social {
+	display: inline-block;
+	vertical-align: middle;
+
+	a {
+		display: inline-block;
+		margin: 0 0 0 15px;
+
+		img {
+			object-fit: cover;
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+
+}
+
+section {
+	position: relative;
+
+	h2 {
+		// font-size: $hugeize;
+		@include changeFontSize($mediaHugesize);
+		margin: 0 0 48px;
+		text-transform: uppercase;
+		line-height: 1.05;
+	}
+
+	.section-text {
+		grid-column: span 3;
+	}
+}
+
+
+
+.ragged-stub {
+	@include positionElement(100%, 100%, 0, 0, left, bottom, 2);
+	@include bgImageEl("../images/ragged-stub-blue.png", contain, center bottom);
+
+	&.white {
+		background-image: url("../images/ragged-stub-white.png");
+	}
+
+	&.white-2 {
+		background-image: url("../images/ragged-stub-white-2.png");
+	}
+
+	&.violet {
+		background-image: url("../images/ragged-stub-violet.png");
+	}
+
+	&.black {
+		background-image: url("../images/ragged-stub-black.png");
+	}
+
+	&.orange {
+		background-image: url("../images/ragged-stub-orange.png");
+	}
+}
+
+
+.index {
+	@include positionElement(100%, 10000px, 0, 0, left, top, 3);
+	@include bgImageEl("../Card-ira.jpg", 1903px, top left);
+	opacity: 0.5;
+	display: none;
+}
+
+
+.page-404 {
+	min-height: 50vh;
+	text-align: center;
+	margin: 0 auto;
+	color: $whiteColor;
+	padding-top: 120px;
+
+	img {
+		width: 190px;
+		height: 220px;
+		margin: 0 0 15px;
+	}
+
+	h2 {
+		font-size: 50px;
+		color: inherit;
+	}
+
+	h3 {
+		font-size: 34px;
+		color: inherit;
+	}
+}
+
+.header-catalog {
+	header {
+		background-color: $greenColor;
+	}
+}

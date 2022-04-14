@@ -1,0 +1,164 @@
+.reviews-section {
+  background-color: $whiteColor;
+  color: $blackColor;
+
+  h2 {
+    grid-column: span 16;
+    padding: 54px 0px 0px;
+  }
+
+  .reviews-control {
+    grid-column: 13/span 3;
+    grid-row: 2;
+
+    .stars-container {
+      b {
+        color: $orangeColor;
+      }
+
+      i {
+        background-image: url("../images/icons/star-gray.svg");
+      }
+    }
+
+  }
+
+
+
+}
+
+.reviews-item {
+
+  grid-column: span 11;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  border-bottom: 1px solid $grayColorSecond;
+  margin: 0 0 60px;
+  padding: 0 0 30px;
+
+  h3 {
+    font-size: $largeSize;
+    margin: 0px 0 12px;
+  }
+
+  h4 {
+    font-family: "medium";
+    font-size: $standartSizePlus;
+    margin: 0 0 35px;
+    color: inherit;
+  }
+
+  .reviews-grade {
+    grid-column: span 1;
+  }
+
+  .reviews-body {
+    grid-column: span 10;
+    font-size: $standartSizePlusPlus;
+  }
+
+  .reviews-images {
+    margin-top: 30px;
+  }
+
+  .reviews-images-item {
+    display: inline-block;
+    width: 210px;
+    padding-bottom: 17.5%;
+    margin-right: 15px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.reviews-item-answer {
+  grid-column: 2/span 12;
+  padding-left: 120px;
+  margin-top: 35px;
+  position: relative;
+
+  h3 {
+    font-size: $standartSizePlusPlus;
+    margin: 0 0 5px;
+  }
+
+  h4 {
+    margin: 0 0 15px;
+  }
+
+  &:before {
+    content: "";
+    @include positionElement(30%, 2px, 0, 11px);
+    background-color: $orangeColor;
+  }
+}
+
+/*reviews-control start*/
+.reviews-control {
+
+  h3 {
+    font-size: $standartSizePlus;
+    margin: 0 0 15px;
+  }
+
+  .btn-container {
+    margin: 0 0 29px;
+  }
+
+  .stars-container {
+    margin: 0 0 15px;
+
+    i {
+      @include icoEl(15px, 15px, "../images/icons/star.svg");
+      margin-right: 9px;
+      cursor: pointer;
+
+      &.star-gray {
+        background-image: url("../images/icons/star-gray.svg");
+      }
+
+      &:hover,
+      &.active {
+        background-image: url("../images/icons/star-active.svg");
+      }
+    }
+
+    span {
+      margin-right: 10px;
+    }
+
+    b {
+      vertical-align: middle;
+    }
+
+  }
+
+  .grade-container {
+    font-family: "medium";
+    margin: 0 0 32px;
+    color: inherit;
+
+    span {
+      margin-right: 15px;
+    }
+
+    i {
+      color: $whiteColor;
+      font-size: $standartSizePlus;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-color: $orangeColor;
+      border-radius: 100%;
+      font-style: normal;
+      padding: 3px 9px;
+    }
+  }
+}
+
+/*reviews-control start*/

@@ -1,0 +1,208 @@
+input.btn,
+.btn {
+  padding: 10px;
+  border-radius: 7px;
+}
+
+section .section-text {
+  grid-column: span 12 / auto;
+  margin: 0 0 30px;
+}
+
+/*header*/
+header .feedback-container {
+
+  padding-left: 10px;
+}
+
+footer .nav-1 {
+  grid-column: span 2 / auto;
+}
+
+footer .feedback-container {
+  grid-column: span 4 / auto;
+}
+
+/*header*/
+/*section-1*/
+.product-slider-container .product-slider-info {
+  padding: 15px;
+  top: 46.5%;
+}
+
+.product-slider-container .product-slider-info h2 {
+  margin: 0px 0px 10px;
+}
+
+.product-slider-container .product-slider-info .product-info-body {
+  margin: 17px 0px 0px;
+  width: calc(100% + 40px);
+}
+
+
+/*section-1*/
+/*section-2*/
+.section-2 .offer-container {
+  grid-column: 1 / span 16;
+}
+
+/*section-2*/
+
+.section-4 h2 {
+  grid-column: 1 / span 16;
+}
+
+.section-4 .about-item-1 {
+  grid-column: 1 / span 8;
+  max-width: 340px;
+}
+
+.section-4 .about-item-2 {
+  grid-column: span 8 / auto;
+}
+
+
+
+
+
+/*card start*/
+.card-detail-top {
+  padding-bottom: 130px;
+}
+
+.card-detail-info {
+  grid-column: 8/span 9;
+}
+
+.section-recommendations {
+  padding-bottom: 140px;
+}
+
+.promotion-section.orange {
+  padding: 25px 0px 77px;
+}
+
+.card-info .info-item-inner em {
+  font-size: 12px;
+}
+
+/*card end*/
+
+
+/*-----defaul-----*/
+
+
+/*-----defaul-----*/
+
+
+/*-----btns-----*/
+
+/*-----btns-----*/
+
+/*-----forms-----*/
+
+/*-----forms-----*/
+
+/*-----popup-form-----*/
+
+
+/*-----popup-form-----*/
+
+/*-----header-----*/
+
+
+/*-----header-----*/
+
+/*-----footer-----*/
+
+
+/*-----footer-----*/
+
+/*-----mobile-menu-----*/
+
+
+/*-----mobile-menu-----*/
+
+/*-----slider-owl-----*/
+
+
+/*-----slider-owl-----*/
+
+
+/*-----map-----*/
+
+/*-----map-----*/
+
+/*--------------------main-page-start----*/
+
+/*--section-1--*/
+/*--section-1--*/
+
+/*--section-2--*/
+/*--section-2--*/
+
+/*--section-3--*/
+/*--section-3--*/
+
+/*--section-4--*/
+/*--section-4--*/
+
+/*--section-5--*/
+/*--section-5--*/
+
+/*--------------------main-page-end----*/
+/*--------------------card-page-start----*/
+
+/*--main-start--*/
+/*--main-end--*/
+
+/*--recommendations-start--*/
+/*--recommendations-end--*/
+
+/*--promotion-start--*/
+/*--promotion-end--*/
+
+/*--reviews-start--*/
+.reviews-item .reviews-grade {
+  grid-column: span 2 / auto;
+}
+
+.reviews-section .reviews-control {
+  grid-area: 2 / 13 / auto / span 4;
+}
+
+.basket-list {
+  grid-column: span 10 / auto;
+}
+
+.information-basket-list {
+  grid-column: span 11 / auto;
+}
+
+.basket-results {
+  grid-column: span 6 / auto;
+}
+
+.img-basket-list {
+  grid-column: span 4 / auto;
+}
+
+.toolbar-basket-list {
+  grid-column: span 7 / auto;
+}
+
+/*--reviews-end--*/
+
+/*--------------------card-page-end----*/
+
+.delivery-steps-item h3 {
+  grid-column: span 10 / auto;
+}
+
+.delivery-steps-item .delivery-steps-form {
+  grid-column: span 11 / auto;
+}
+
+.delivery-steps-item-last .delivery-steps-end {
+  grid-column: 1/span 11;
+}

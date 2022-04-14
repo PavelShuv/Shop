@@ -1,0 +1,38 @@
+.section-4 {
+  background-color: $violetColor;
+  color: $whiteColor;
+  padding: 55px 0px 87px;
+
+
+  h2 {
+    color: inherit;
+    grid-column: span 3;
+  }
+
+  h3 {
+    font-family: "medium";
+    font-size: $standartSizePlusPlus;
+    margin: 50px 0 15px;
+    color: inherit;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    opacity: 0.5;
+    margin: 0 0 15px;
+  }
+
+
+  .about-item-1 {
+    grid-column: 5/span 4;
+    max-width: 340px;
+  }
+
+  .about-item-2 {
+    grid-column: span 5;
+    max-width: 600px;
+  }
+}

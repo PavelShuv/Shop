@@ -1,0 +1,11 @@
+.mobile-menu.element-show(data-showEl="0")
+  .close
+  nav
+    ul
+      each val,index in ["Каталог", "Акции","О нас", "Где купить","Контакты"]
+        li 
+          a(href="#")
+            = val 
+  .feedback-container
+    .feedback
+      a(href="tel:+88005559810" ) +7 (921) 789 - 65 - 31

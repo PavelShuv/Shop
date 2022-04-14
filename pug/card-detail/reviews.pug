@@ -1,0 +1,32 @@
+section.reviews-section.main-grid
+  h2 Отзывы наших
+    br
+    | покупателей
+
+  each val in ["","",""]
+    .reviews-item
+      .reviews-grade
+        .offer-circle
+          span 5
+          i ♥
+      .reviews-body 
+        h3 Анна Рыжук
+        h4 10 Июля 2021
+        .reviews-body-text
+          |Какой же классный набор! Детали такие яркие, можно сидеть и разглядывать каждую долго-долго) Очень понравилась форма собранной картинки... а эти детальки опять же: в виде цветков, деревьев и птиц - я словно оказалась на природе) Собирать - одно удовольствие)Спасибо вам за такую прекрасную возможность, за получение кучи приятных эмоций при сборе ваших пазлов)), желаю Вам дальнейшего развития и новых идей))
+        .reviews-images
+          each val in ["","",""]
+            .reviews-images-item.img-cover
+              img(src="../images/video-bg.jpg", alt="")
+      .reviews-item-answer
+          h3 Администратор
+          h4 10 Июля 2021
+          .answer-text Большое спасибо, что заметили, исправим!
+  // reviews-control start
+  include reviews-control.pug 
+  // reviews-control end
+
+  // pagination-page start
+  include ../default/pagination-page.pug
+  // pagination-page end
+

@@ -1,0 +1,34 @@
+
+// mobile-menu
+include mobile-menu.pug
+// mobile-menu
+
+// popup-form
+include popup-form.pug
+// popup-form 
+
+header
+  .main-grid
+    .logo
+      a(href="./index.html")
+        img(src="../images/logo.svg")
+    .feedback-container
+      .feedback
+        a(href="tel:+74952238970" ) + 7 (921) 789 - 65 - 31
+      nav.nav-1
+        ul
+          each val in ["Каталог","Акции"]
+            li  
+              a(href="#") 
+                = val
+    nav.nav-2
+      ul
+        each val in ["О нас","Где купить","Контакты"]
+          li  
+            a(href="#") 
+              = val
+    .btn-container
+      .btn-container-inner
+        a.loop-btn.ico(href="#") 
+        a.basket-btn.ico(href="#")
+        a.hamburger-btn.ico.element-btn(data-showEl="0" href="#") 

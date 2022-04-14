@@ -1,0 +1,60 @@
+.basket-results {
+  grid-column: span 5;
+
+  .btn-container {
+    text-align: center;
+  }
+}
+
+.basket-results-container {
+  background-color: $whiteColor;
+  color: $grayColor;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 0 0 15px;
+
+  h2 {
+    text-align: center;
+    margin: 0 0 30px;
+    color: inherit;
+    font-size: $largeSize;
+  }
+
+  .basket-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 15px;
+    font-size: $standartSizePlusPlus;
+
+    span.large {
+      font-size: $largeSize;
+      color: $orangeColor;
+    }
+  }
+
+  .basket-line-stub {
+    height: 60px;
+  }
+
+  .basket-line-price {
+    width: 50%;
+    text-align: right;
+  }
+
+  .basket-results-total {
+    font-family: "semibold";
+    font-size: $largeSizePlus;
+    color: $orangeColor;
+  }
+
+}
+
+.basket-results-hint {
+  display: flex;
+  justify-content: space-between;
+
+  .hint-cell {
+    width: 50%;
+    padding: 15px;
+  }
+}

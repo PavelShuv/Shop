@@ -1,0 +1,100 @@
+.delivery-page {
+  background-color: $greenColor;
+  color: $whiteColor;
+  padding-bottom: 120px;
+
+  h1 {
+    color: inherit;
+  }
+}
+
+.delivery-steps {
+  grid-column: span 11;
+}
+
+
+
+.delivery-steps-item {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-gap: 30px;
+  border-top: 1px solid $whiteColor;
+  padding-top: 30px;
+  margin: 0 0 30px;
+
+  .delivery-num {
+    grid-column: span 1;
+    font-size: $mediumSize;
+    @include changeFontSize($mediaMediumSize);
+    font-family: "semibold";
+  }
+
+  h3 {
+
+    @include changeFontSize($mediaMediumSize);
+    color: inherit;
+    grid-column: span 3;
+  }
+
+  .delivery-steps-form {
+    grid-column: span 7;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 30px;
+
+    .custom-select,
+    input {
+      grid-column: span 4;
+      border-color: $whiteColor;
+      color: $whiteColor;
+
+      &::placeholder {
+        color: $whiteColor;
+      }
+    }
+
+    .checkbox {
+      grid-column: span 6;
+      border-top: 1px solid $whiteColor;
+    }
+  }
+}
+
+.delivery-steps-item-last {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-gap: 30px;
+
+  .delivery-steps-end {
+    grid-column: 5/ span 5;
+  }
+
+  .delivery-steps-subtotal {
+    display: flex;
+    justify-content: space-between;
+    font-family: "semibold";
+    font-size: $standartSizePlus;
+    margin: 0 0 30px;
+
+    .subtotal-item {
+      width: 50%;
+      border-bottom: 1px solid $whiteColor;
+      padding-bottom: 5px;
+    }
+
+    .subtotal-item:first-child {
+      margin-right: 15px;
+    }
+  }
+
+  .checkbox {
+    border-bottom: 1px solid $whiteColor;
+    padding-bottom: 5px;
+  }
+
+  .delivery-steps-total {
+    font-size: $largeSize;
+    font-family: "semibold";
+    margin: 0 0 30px;
+  }
+}

@@ -1,0 +1,41 @@
+doctype html
+html
+	body
+		// head start
+		include default/head.pug 
+		// head end
+ 
+		// header 
+		include default/header.pug
+		// header
+
+		// card-detail start
+		.card-detail
+			.stub 
+			// card-top start
+			include card-detail/top.pug
+			// card-top end
+
+			// recommendations start
+			include card-detail/recommendations.pug
+			// recommendations end
+
+			// section-3 start
+			- var typeSection = true;
+			include main-page/section-3.pug
+			// section-3 end
+
+			// reviews start
+			include card-detail/reviews.pug
+			// reviews end
+
+			// card-detail end
+
+			// footer stub
+			.footer-stub
+				.ragged-stub.black
+			// footer stub
+
+		// footer
+		include default/footer.pug
+		// footer 

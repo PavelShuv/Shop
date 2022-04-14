@@ -1,0 +1,14 @@
+
+section.section-3.promotion-section(class=typeSection ? 'orange' : 'white')
+  .promotion-slider.promotion-owl.owl-carousel
+    each val in ["","","",""]
+      .promotion-item.main-grid
+        .promotion-info
+          h2 Раздаем подарки за покупки!
+          .promotion-text Рады сообщить, что у нас проходит акция - при покупке набора пазлов стоимостью выше 5 000 т.р. вы получите один из подарочных наборов в дополнении к своей покупке совершенно бесплатно.
+          a.btn.large(class=typeSection ? 'white-border' : 'orange-btn' href="#") Узнать больше
+        .promotion-img
+          img(src="../images/temp/product-1.png", alt="")
+  if !typeSection
+    .ragged-stub.violet
+

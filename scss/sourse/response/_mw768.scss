@@ -1,0 +1,204 @@
+/*-----defaul-----*/
+.main-grid {
+  padding: 0px 15px;
+  grid-column-gap: 10px;
+}
+
+/*-----defaul-----*/
+
+
+/*-----btns-----*/
+
+/*-----btns-----*/
+
+/*-----forms-----*/
+
+/*-----forms-----*/
+
+/*-----popup-form-----*/
+
+
+/*-----popup-form-----*/
+
+/*-----header-----*/
+.logo img {
+  width: 90px;
+}
+
+header {
+
+  .nav-1,
+  .nav-2 {
+    display: none;
+  }
+
+  .feedback-container .feedback {
+    margin: auto;
+  }
+
+  .btn-container {
+    grid-column: span 6 / auto;
+  }
+}
+
+
+/*-----header-----*/
+
+/*-----footer-----*/
+
+footer .feedback-container {
+  grid-column: span 6/auto;
+}
+
+footer .social-container {
+  grid-column: 9/ span 8;
+}
+
+footer .footer-info {
+  grid-column: span 7 / auto;
+}
+
+footer .social-container .social {
+  margin: 0px 0px 91px;
+}
+
+footer .nav {
+  text-align: right;
+}
+
+footer .nav-2 {
+  grid-column: span 6 / auto;
+}
+
+/*-----footer-----*/
+
+/*-----mobile-menu-----*/
+
+
+/*-----mobile-menu-----*/
+
+/*-----slider-owl-----*/
+
+
+/*-----slider-owl-----*/
+
+
+/*-----map-----*/
+
+/*-----map-----*/
+
+/*--------------------main-page-start----*/
+
+/*--section-1--*/
+.section-1 {
+  max-height: 720px;
+}
+
+.quote-container {
+  width: 80%;
+}
+
+.greetings-container .greetings-bg {
+  padding-bottom: 55%;
+}
+
+.product-slider-container img {
+  width: 70%;
+  left: 10%;
+  top: 35%;
+}
+
+.product-slider-container .product-slider-info {
+  padding: 15px;
+  top: 60%;
+  left: 10%;
+  width: 80%;
+}
+
+.scroll-down {
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  bottom: 14%;
+  margin-left: -30px;
+
+}
+
+/*--section-1--*/
+
+/*--section-2--*/
+.section-2 {
+  padding: 0px 0px 137px;
+}
+
+.offer-tabs-container {
+  margin-bottom: 20px;
+}
+
+.offer-tabs-container .offer-tabs a {
+  margin-right: 30px;
+}
+
+.offer-item .offer-img {
+  width: 170px;
+  height: 170px;
+}
+
+.offer-item .offer-description {
+  grid-column: span 7 / auto;
+  padding-top: 5px;
+}
+
+.offer-item .offer-link-container {
+  grid-column: 9 / span 4;
+  display: flex;
+}
+
+.offer-item {
+  padding: 37px 0px 42px;
+}
+
+/*--section-2--*/
+
+/*--section-3--*/
+.section-3 {
+  padding: 45px 0px 137px;
+}
+
+.promotion-info {
+  grid-column: span 8 / auto;
+}
+
+.promotion-img {
+  grid-column: 9 / span 8;
+}
+
+.promotion-slider h2 {
+  text-transform: uppercase;
+  margin: 0px 0px 101px;
+}
+
+/*--section-3--*/
+
+/*--section-4--*/
+/*--section-4--*/
+
+/*--section-5--*/
+/*--section-5--*/
+
+/*--------------------main-page-end----*/
+/*--------------------card-page-start----*/
+
+/*--main-start--*/
+/*--main-end--*/
+
+/*--recommendations-start--*/
+/*--recommendations-end--*/
+
+/*--promotion-start--*/
+/*--promotion-end--*/
+
+/*--reviews-start--*/
+/*--reviews-end--*/
+
+/*--------------------card-page-end----*/

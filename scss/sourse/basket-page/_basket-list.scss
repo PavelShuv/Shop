@@ -1,0 +1,140 @@
+.basket-page {
+  background-color: $greenColor;
+  color: $whiteColor;
+  padding-bottom: 120px;
+
+  h1 {
+    color: inherit;
+  }
+}
+
+.basket-end {
+  min-height: 50vh;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  color: $whiteColor;
+  padding-top: 120px;
+
+  img {
+    width: 190px;
+    height: 220px;
+    margin: 0 0 15px;
+  }
+
+  h2 {
+    font-size: 50px;
+    color: inherit;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: inherit;
+  }
+}
+
+.basket-list {
+  grid-column: span 11;
+}
+
+.basket-list-item {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-gap: 20px;
+  border-top: 1px solid;
+  padding-top: 25px;
+  margin: 0 0 30px;
+
+  h3 {
+    padding-left: 90px;
+    font-family: "regular";
+    font-size: $mediumSize;
+    color: inherit;
+  }
+
+  .price-basket-list {
+    font-size: $largeSize;
+    font-family: "semibold";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+  }
+
+  .price_old-basket-list {
+    font-size: $standartSizePlusPlus;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+
+    &::before {
+      content: "";
+      @include positionElement(100%, 1px, 0, 50%);
+      background-color: $whiteColor;
+    }
+  }
+}
+
+.information-basket-list {
+  grid-column: span 4;
+
+  .card-info .info-item-inner {
+    background-color: $whiteColor;
+    color: $greenColor;
+  }
+}
+
+.img-basket-list {
+  position: relative;
+  grid-column: span 3;
+  background-color: $whiteColor;
+  border-radius: 15px;
+  padding: 10%;
+
+  img {
+    width: 80%;
+  }
+}
+
+.toolbar-basket-list {
+  grid-column: span 4;
+  position: relative;
+}
+
+.num-basket-list {
+  font-size: $mediumSize;
+  font-family: "semibold";
+  position: absolute;
+}
+
+
+.count-basket-list {
+  margin-top: 15px;
+
+  h4 {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    margin: 0 0 15px;
+  }
+
+  * {
+    vertical-align: middle;
+  }
+
+  .current-count {
+    display: inline-block;
+    font-family: "semibold";
+    font-size: $largeSize;
+    width: 60px;
+    text-align: center;
+  }
+
+  .plus-count {
+    @include icoEl(30px, 30px, "../images/controls/plus-basket.svg");
+  }
+
+  .minus-count {
+    @include icoEl(30px, 30px, "../images/controls/minus-basket.svg");
+  }
+}

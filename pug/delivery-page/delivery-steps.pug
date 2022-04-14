@@ -1,0 +1,60 @@
+
+.delivery-steps
+  .delivery-steps-item
+    .delivery-num 01
+    h3 Контакты
+    .delivery-steps-form.form
+      input(type="text" placeholder="Фамилия")
+      input(type="text" placeholder="Имя")
+      input(type="text" placeholder="Отчество")
+      input(type="text" placeholder="Ваш телефон*")
+      input(type="text" placeholder="Ваш e-mail*")
+  .delivery-steps-item
+    .delivery-num 02
+    h3 Адрес доставки
+    .delivery-steps-form.form
+      select.style-select(data-text="Город")
+        each val in ["one","two","three","four","five","six","sevent","eight","nine","ten"]
+          option 
+            = val
+      input(type="text" placeholder="Улица")
+      input(type="text" placeholder="Номер дома")
+      input(type="text" placeholder="Строение")
+      input(type="text" placeholder="Этаж")
+      input(type="text" placeholder="Квартира/Офис")
+  .delivery-steps-item
+    .delivery-num 03
+    h3 Тип доставки 
+    .delivery-steps-form.form
+      label.checkbox
+        | Курьером до дома
+        input(type="radio" name="type-1")
+        span
+      label.checkbox
+        | Самовывоз из пункта выдачи
+        input(type="radio" name="type-1")
+        span
+  .delivery-steps-item
+    .delivery-num 04
+    h3 Способ оплаты
+    .delivery-steps-form.form
+      label.checkbox
+        | Наличные курьеру
+        input(type="radio" name="type-1")
+        span
+      label.checkbox
+        | Оплата картой онлайн
+        input(type="radio" name="type-1")
+        span
+  .delivery-steps-item-last
+    .delivery-steps-end
+      .delivery-steps-subtotal
+        .subtotal-item Доставка
+        .subtotal-item Бесплатная / 300 р.
+      label.checkbox
+        | Согласен с условиями обработки персональных данных, Пользовательского соглашения и Публичной оферты
+        input(type="checkbox" )
+        span
+      .delivery-steps-total ИТОГО:  34 284 р.
+      .btn-container
+        a(href="#").btn.white-btn.huge.full  Оформить заказ 

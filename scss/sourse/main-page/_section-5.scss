@@ -1,0 +1,12 @@
+.section-5 {
+  position: relative;
+  height: 86vh;
+  max-height: 900px;
+  display: flex;
+  @include bgImageEl("../images/video-bg.jpg", cover);
+}
+
+.play-btn {
+  @include icoEl(80px, 80px, "../images/controls/play.svg");
+  margin: auto;
+}

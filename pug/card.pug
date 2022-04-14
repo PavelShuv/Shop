@@ -1,0 +1,68 @@
+doctype html
+html
+	body
+		.index
+		// head
+		include default/head.pug 
+		// head
+ 
+		// header 
+		include default/header.pug
+		// header
+
+
+		// card-page start
+
+		// card-main start
+		section.card-main
+			.card-img
+				.card-img-item
+					img(src="../images/product-1.png", alt="")
+			.card-info 
+				h3 Anushka
+				h4 Sophie Wilkins (2020)
+				.card-characteristics
+					.characteristics-line
+						b Материал:
+						span Цифровая живопись
+					.characteristics-line
+						b Уровень сложности:
+						span Лёгкий уровень
+					.characteristics-line
+						b Время сборк:
+						span 1-3 часа
+					.characteristics-line
+						b Количество деталей:
+						span 115
+					.characteristics-line
+						b Размер картины:
+						span 230 х 250
+					.characteristics-line
+						b Артикул:
+						span 7-63-17-130
+				.card-reviews
+					h3 Оцените качество:
+					.stars-container
+						each val in ["","","","","",]
+							i
+						span 4.8
+					.grade-container
+						span grade
+						i 4
+					.btn-container
+						a.btn(href="#") Оставить отзыв
+					.card-reviews-img
+				.card-buy-container
+					.card-price
+					.card-price_old
+					.card-hint
+					a(href="#").btn.btn-buy-orange
+						span В корзину
+						i
+		// card-main end
+		
+		// card-page end
+
+		// footer
+		include default/footer.pug
+		// footer

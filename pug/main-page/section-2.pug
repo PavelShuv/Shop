@@ -1,0 +1,40 @@
+section.section-2.offer-section
+  .main-grid
+    h2 Лучшие предложения
+  .main-grid
+    .section-text Картины будут оживать прямо в ваших руках в процессе медитативного соединения деталей.  А в конце пути, когда пазл будет собран, перевернув его ты увидишь скрытый сюжет, дополняющий смыслами картины художников.
+    .offer-container
+      .offer-tabs-container
+        .offer-tabs
+          a.active(href="#") Новинки
+          a(href="#") Акции
+          a(href="#") Лидеры рейтинга
+        a.link-more(href="#") 
+          span Перейти в каталог 
+          i
+      .offer-all_items
+        each val in ["","","","",""]
+          .offer-item
+            .offer-rating
+              .offer-circle
+                span 5
+                i ♥
+              .offer-count
+                span 5 
+                |отзывов
+            .offer-img-container
+              .offer-img.img-cover
+                img(src="../images/temp/offer-1.jpg", alt="")
+            .offer-description
+              h3 Воздушный корабль
+              h4 222 детали, Средний уровень
+              .offer-buy-container
+                .offer-price 5 100 р.
+                a.btn.large.btn-buy-white(href="#") 
+                  span В корзину
+                  i
+            .offer-link-container
+              a.link-more(href="#") 
+                span Узнать больше 
+                i
+  .ragged-stub.white

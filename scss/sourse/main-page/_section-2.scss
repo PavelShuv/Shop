@@ -1,0 +1,157 @@
+.section-2 {
+  background-color: $blueColor;
+  color: $whiteColor;
+  padding: 45px 0 237px;
+
+  h2 {
+    color: inherit;
+  }
+
+  .offer-container {
+    grid-column: 5/span 12;
+
+  }
+
+  .link-more {
+    color: $whiteColor;
+  }
+}
+
+.offer-tabs-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 60px;
+
+  .offer-tabs {
+    display: flex;
+
+    a {
+      font-family: "semibold";
+      font-size: $largeSize;
+
+      @include changeFontSize($mediaLargeSize);
+
+      text-decoration: none;
+
+      opacity: 0.5;
+      margin: auto 0;
+      margin-right: 58px;
+
+      &:hover,
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.offer-item {
+  border-top: 1px solid $whiteColor;
+  padding: 37px 0 72px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+
+
+
+  .offer-rating {
+    grid-column: span 2;
+  }
+
+  .offer-img-container {
+    grid-column: span 3;
+    height: 188px;
+  }
+
+  .offer-description {
+    grid-column: span 4;
+    padding-top: 25px;
+  }
+
+  .offer-link-container {
+    grid-column: 10 / span 3;
+    display: flex;
+
+    .link-more {
+      margin: auto 0 0 auto;
+    }
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $whiteColor;
+  }
+
+  .offer-rating {
+
+
+    .offer-count {
+      margin-top: 17px;
+      font-family: "medium";
+      font-size: $standartSizePlus;
+    }
+  }
+
+  .offer-img {
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  h3 {
+    @include changeFontSize($mediaLargeSize);
+    margin: 0 0 15px;
+    color: inherit;
+  }
+
+  h4 {
+    font-size: $standartSizePlus;
+    font-family: inherit;
+    opacity: 0.5;
+    margin: 0px 0px 56px;
+    color: inherit;
+  }
+
+  .offer-buy-container {
+    display: flex;
+    justify-content: space-between;
+
+    .btn {
+
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .offer-price {
+    // font-size: $mediumSize;
+    @include changeFontSize($mediaMediumSize);
+    display: flex;
+    align-items: center;
+
+
+  }
+}
+
+.offer-circle {
+  background-color: $orangeColor;
+  text-align: center;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  font-size: $mediumSize;
+  padding: 15px 0;
+  color: $whiteColor;
+
+  span {
+    vertical-align: top;
+  }
+
+  i {
+    font-style: normal;
+    font-size: $minimumSize;
+
+    vertical-align: super;
+  }
+}

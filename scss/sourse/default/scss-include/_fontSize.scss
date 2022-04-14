@@ -1,0 +1,28 @@
+$microSize: 10px;
+$minimumSize: 12px;
+$smallSize: 14px;
+$standartSize: 16px;
+
+$standartSizePlus: 18px;
+$mediaStandartSizePlus:(1920: $standartSizePlus, 1440: 16px);
+
+$standartSizePlusPlus: 20px;
+$mediastandartSizePlusPlus:(1920: $standartSizePlusPlus, 1440: 18px, 1280: 16px);
+
+$mediumSize: 26px;
+$mediaMediumSize:(1920: $mediumSize, 1440: 21px, 414: 18px);
+
+$largeSize: 34px;
+$mediaLargeSize:(1920: $largeSize, 1680: 28px, 1440: 21px);
+
+$largeSizePlus: 50px;
+$medialargeSizePlus:(1920: $largeSizePlus, 1680: 42px, 1440: 32px, 414: 24px);
+
+$hugesize: 64px;
+$mediaHugesize:(1920: $hugesize, 1680: 42px, 414: 24px);
+
+
+
+
+
+/*-----414-----*/

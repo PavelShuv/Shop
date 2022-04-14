@@ -1,0 +1,29 @@
+html
+	body
+		// head start
+		include default/head.pug 
+		// head end
+ 
+		// header start
+		include default/header.pug
+		// header end
+		.basket-page
+			.stub
+			h1 Корзина
+			.main-grid
+				// basket-list start
+				include basket-page/basket-list.pug
+				// basket-list end  
+
+				// basket-results start
+				include basket-page/basket-results.pug
+				// basket-results end  
+
+			// footer stub
+			.footer-stub.green
+				.ragged-stub.black
+			// footer stub
+			
+		// footer start
+		include default/footer.pug
+		// footer end  

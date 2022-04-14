@@ -1,0 +1,40 @@
+section.section-recommendations
+  .main-grid
+    h2 С этим товаром
+      br
+      | покупают
+  .recommendations-owl.main-grid.owl-carousel
+    each val in ["","","",""]
+      .recommendations-item
+        h3 Девушка с длинными волосами 
+        .recommendations-img.img-cover
+          img(src="../images/temp/product-1.png", alt="")
+          .offer-circle
+            span 5
+            i ♥
+        .recommendations-buy-container
+          .recommendations-price 5 100 р.
+          .recommendations-price_old 5 100 р.
+          .btn-container
+            a(href="#").btn.btn-buy-orange
+              span В корзину
+              i
+        .card-info
+          .info-item.info-level 
+            .info-item-inner
+              each val in ["","","","","",]
+                i
+            span Уровень 
+          .info-item
+            .info-item-inner 
+              em 930 х 1250
+            span Размер картины
+          .info-item
+            .info-item-inner 
+              em 1 576
+            span Детали 
+  .btn-container
+    a.link-more.orange(href="#") 
+      span Посмотреть все товары
+      i
+  .ragged-stub.orange
